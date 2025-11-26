@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>✨Myself– Writer × Coder</title>
+  <style>
+    .wisteria-petal {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  pointer-events: none;
+  animation: fall linear forwards;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  } 
+}
+
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #fff0f5, #f0faff);
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar {
+      background-color: #222;
+      padding: 10px 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+      padding: 0;
+      margin: 0;
+    }
+
+    .navbar a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+    }
+
+    .navbar a:hover {
+      color: #ff69b4;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      color: #b30086;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #444;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .section-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .link-card {
+      background: #ffffffcc;
+      backdrop-filter: blur(6px);
+      border-radius: 10px;
+      border-left: 5px solid #ff69b4;
+      padding: 20px;
+      width: 200px;
+      text-align: center;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .link-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .link-card a {
+      text-decoration: none;
+      color: #b30086;
+      font-weight: bold;
+      display: block;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">🏠 Home</a></li>
+      <li><a href="intro.html">🌸 Intro</a></li>
+      <li><a href="educational.html">🎓 Education</a></li>
+      <li><a href="books.html">📚 Books</a></li>
+      <li><a href="quotes.html">🖋️ Quotes</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="hero">
+    <h1>👋 Hi, I'm prachi!~</h1>
+    <p>
+      Welcome to my little corner of the internet — part portfolio, part digital diary.  
+      I’m a writer, coder, reader, and dreamer all bundled into one coffee-powered journal.
+    </p>
+
+    <div class="section-links">
+      <div class="link-card">
+        <span>🌸</span>
+        <a href="intro.html">About Me</a>
+      </div>
+      <div class="link-card">
+        <span>🎓</span>
+        <a href="educational.html">Education</a>
+      </div>
+      <div class="link-card">
+        <span>📚</span>
+        <a href="books.html">Bookshelf</a>
+      </div>
+      <div class="link-card">
+        <span>🖋️</span>
+        <a href="quotes.html">My Words</a>
+      </div>
+    </div>
+  </div>
+  <script>
+    const createPetal = () => {
+      const petal = document.createElement("div");
+      petal.classList.add("wisteria-petal");
+      petal.style.left = Math.random() * 100 + "vw";
+      petal.style.animationDuration = 2 + Math.random() * 3 + "s"; // speed variation
+      petal.style.opacity = Math.random();
+      petal.style.fontSize = Math.random() * 10 + 10 + "px"; // size variation
+      petal.innerText = "💜";
+      document.body.appendChild(petal);
+  
+      setTimeout(() => {
+        petal.remove();
+      }, 5000);
+    };
+  
+    setInterval(createPetal, 300); // frequency
+  </script>
+  
+</body>
+</html>
