@@ -2,69 +2,81 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>✨🍜 Meet Me – Intro</title>
+  <title>🌸 Meet Prachi — Writer × Coder</title>
+
   <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(135deg, #ffeef8, #f2f7ff);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      overflow: hidden;
+    body{
+      margin:0;
+      font-family:'Segoe UI',sans-serif;
+      background:linear-gradient(135deg,#ffeef8,#f2f7ff);
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      min-height:100vh;
     }
 
-    .intro-card {
-      background: rgba(255, 255, 255, 0.6);
-      backdrop-filter: blur(12px);
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-      border-radius: 16px;
-      padding: 40px;
-      max-width: 700px;
-      text-align: center;
-      border: 2px dashed #ff7dff;
+    .intro-card{
+      background:rgba(255,255,255,0.7);
+      backdrop-filter:blur(12px);
+      padding:40px;
+      border-radius:18px;
+      width:85%;
+      max-width:700px;
+      text-align:center;
+      border:3px dashed #ff8be1;
+      box-shadow:0 8px 22px rgba(0,0,0,0.08);
+      animation:fadePop 0.6s ease;
     }
 
-    h1 {
-      font-size: 2.4rem;
-      color: #d63384;
+    .sparkle{
+      font-size:2rem;
+      margin-bottom:10px;
     }
 
-    .sparkle {
-      font-size: 2rem;
-      margin: 10px;
+    h1{
+      font-size:2.3rem;
+      color:#d63384;
+      margin-bottom:12px;
     }
 
-    p {
-      font-size: 1.1rem;
-      color: #444;
-      margin-top: 10px;
+    p{
+      font-size:1.15rem;
+      color:#444;
+      line-height:1.6em;
     }
 
-    .back-btn {
-      display: inline-block;
-      margin-top: 25px;
-      background: #c64fba;
-      color: #fff;
-      padding: 10px 20px;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background 0.3s ease;
+    .back-btn{
+      display:inline-block;
+      margin-top:25px;
+      background:#c64fba;
+      color:#fff;
+      padding:10px 26px;
+      border-radius:40px;
+      text-decoration:none;
+      font-weight:600;
+      font-size:1rem;
+      transition:.3s;
     }
 
-    .back-btn:hover {
-      background: #ffb3d9;
-      color: #333;
+    .back-btn:hover{
+      background:#ffb3e6;
+      color:#333;
+      transform:scale(1.05);
+    }
+
+    @keyframes fadePop{
+      from{opacity:0;transform:scale(0.95);}
+      to{opacity:1;transform:scale(1);}
     }
   </style>
 </head>
+
 <body>
 
-  <div class="intro-card">
-    <div class="sparkle">🌸✨💻📚</div>
-    <h1>Hi, I’m Prachi!</h1>
+<div class="intro-card">
+  <div class="sparkle">🌸✨💻📚</div>
+  <h1>Hi, I’m Prachi!</h1>
+
     <p>
       A writer who turns emotions into ink,<br />
       a coder who turns coffee into HTML.<br /><br />
@@ -76,11 +88,8 @@
       And I'm here to make both beautiful.
     </p>
 
-    <a href="index.html" class="back-btn">← Back to Home</a>
-  </div>
+  <a href="index.html" class="back-btn">← Back to Home</a>
+</div>
 
 </body>
 </html>
-
-
-
