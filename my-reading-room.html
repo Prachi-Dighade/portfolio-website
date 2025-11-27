@@ -1,99 +1,116 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>📚 Hanna’s Book Journal</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background: #fff8e6;
-      color: #333;
-      padding: 40px;
-      line-height: 1.6;
-    }
+<meta charset="UTF-8" />
+<title>📚 Hanna’s  aka prachi;s inner self's Book Journal</title>
 
-    .journal-page {
-      max-width: 900px;
-      margin: auto;
-      background: #fffefc;
-      border-left: 6px solid #ff6f00;
-      border-radius: 10px;
-      padding: 35px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    }
+<style>
+  body{
+    margin:0;
+    font-family:'Segoe UI',sans-serif;
+    background:#fff8e6;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    min-height:100vh;
+    padding:50px 20px;
+  }
 
-    h1 {
-      color: #ff6f00;
-      font-size: 2.2rem;
-    }
+  .journal-page{
+    background:#fffefc;
+    width:90%;
+    max-width:900px;
+    border-left:6px solid #ff6f00;
+    border-radius:12px;
+    padding:40px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+    animation:fade 0.6s ease;
+  }
 
-    h2 {
-      color: #e65100;
-      border-bottom: 2px dashed #ffb74d;
-      padding-bottom: 4px;
-      margin-top: 30px;
-    }
+  h1{
+    color:#ff6f00;
+    font-size:2.3rem;
+    margin-bottom:15px;
+    text-align:center;
+  }
 
-    ul {
-      list-style: square;
-      margin-left: 20px;
-    }
+  h2{
+    color:#e65100;
+    border-bottom:2px dashed #ffb74d;
+    padding-bottom:6px;
+    margin-top:30px;
+    font-size:1.45rem;
+  }
 
-    .book {
-      background: #fff4e0;
-      padding: 15px;
-      border-left: 4px solid #ff9800;
-      margin: 10px 0;
-      border-radius: 6px;
-    }
+  .book{
+    background:#fff4e0;
+    padding:13px 15px;
+    border-left:4px solid #ff9800;
+    border-radius:6px;
+    margin:10px 0;
+    font-size:1.06rem;
+  }
 
-    .back {
-      display: inline-block;
-      margin-top: 30px;
-      background: #222;
-      color: #fff;
-      text-decoration: none;
-      padding: 10px 16px;
-      border-radius: 20px;
-    }
+  ul{
+    margin-left:25px;
+    font-size:1.05rem;
+  }
+  ul li{margin-bottom:6px;}
 
-    .back:hover {
-      background: #ffb300;
-      color: #222;
-    }
-  </style>
+  a.back{
+    display:inline-block;
+    margin-top:35px;
+    background:#222;
+    color:white;
+    padding:10px 22px;
+    font-size:1rem;
+    text-decoration:none;
+    border-radius:25px;
+    transition:.3s;
+  }
+  a.back:hover{
+    background:#ffb300;
+    color:#222;
+    transform:scale(1.05);
+  }
+
+  @keyframes fade{
+    from{opacity:0;transform:translateY(10px);}
+    to{opacity:1;transform:translateY(0);}
+  }
+</style>
 </head>
+
 <body>
-  <div class="journal-page">
-    <h1>📚 Hanna’s Book Journal</h1>
+<div class="journal-page">
+  
+  <h1>📚 Hanna’s Book Journal</h1>
 
-    <h2>📖 Currently Reading</h2>
-    <div class="book">Atomic Habits – James Clear</div>
-    <div class="book"> Think like A Monk </div>
-    
-    <h2>🎯 2025 Book Goals</h2>
-    <ul>
-      <li>Read 20 self-growth books</li>
-      <li>Finish 5 classics (finally)</li>
-      <li>Try one genre I avoid (👀 horror maybe?)</li>
-    </ul>
+  <h2>📖 Currently Reading</h2>
+  <div class="book">Atomic Habits — James Clear</div>
+  <div class="book">Think Like a Monk — Jay Shetty</div>
 
-    <h2>🪄 Book Vault (Favorites)</h2>
-    <ul>
-      <li> Ikigai – The Japanese Secret to a Long and Happy Life</li>
-      <li>Rich Dad Poor Dad – Robert Kiyosaki</li>
-      <li>spyXfamily (yes it counts 😌)</li>
-    </ul>
+  <h2>🎯 2025 Book Goals</h2>
+  <ul>
+    <li>Read 20 self-growth books</li>
+    <li>Finish 5 classics (finally)</li>
+    <li>Attempt a new genre — maybe horror? 👀</li>
+  </ul>
 
-    <h2>📦 The Secret Shelf</h2>
-    <ul>
-      <li>The Alchemist (read halfway... again)</li>
-      <li>Power of your subconcious Mind (need more brainpower lol)</li>
-    </ul>
+  <h2>🪄 Shelf of Favorites</h2>
+  <ul>
+    <li>Ikigai — The Japanese Secret to a Long & Happy Life</li>
+    <li>Rich Dad Poor Dad — Robert Kiyosaki</li>
+    <li>Spy × Family (yes it absolutely counts)</li>
+  </ul>
 
-    <a href="index.html" class="back">← Back to Home</a>
-  </div>
+  <h2>📦 The *“One Day I'll Finish”* Corner</h2>
+  <ul>
+    <li>The Alchemist — ongoing (again 💀)</li>
+    <li>Power of Your Subconscious Mind — my brain ran away</li>
+  </ul>
+
+  <a href="index.html" class="back">← Back to Home</a>
+</div>
 </body>
 </html>
-
